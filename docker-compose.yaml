@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    container_name: portfolio
+    build:
+     context: build
+     target: webbuilder
+    ports:
+      - '3000:3000'
+      - '6000:6000'
+      - '6001:6001'
+      - '8080:8080'
+    volumes:
+      - ./src:/home/user/src
+      - ./public:/home/user/public
+    # DEBUG COMMAND
+    # command: python3 -m flask --app app run --port=8000 --host=0.0.0.0 --debug
+    command: tail -F Yllo is a good boy
+    # command: npx vite --port 8080 --host
+    # PRODUCTION COMMAND
+    # command: waitress-serve --host 0.0.0.0 --port=8000 app:app%
