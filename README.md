@@ -18,7 +18,7 @@ Currently, two official plugins are available:
  5. Load all .fbx files from mixamo and delete all models except the first one. In the animation tab, rename all animations.
  6. Apply the textures (base color, normal, roughness, specular) using shader editor [tutorial](https://www.youtube.com/watch?v=mX5O5v_d3aE)
  7. Export the model with animations to .glb (the bug is now gone thanks to the mixamo)
- 8. Compress the .glb file using [aspose](https://products.aspose.app/3d/compression/gltf) (but it does not always work with animations and textures - it did not work for me, so I use the uncompressed model).
+ 8. Compress the .glb file using [aspose](https://products.aspose.app/3d/compression/gltf) (but it does not always work with animations and textures - it did not work for me, so I use the uncompressed model). If it does not work, you can try to compress the file during the blender .glb exportation - there is a compress checkbox and settings.
  9. Finally, you can use [this tool](https://gltf.pmnd.rs/) to create a component from the .glb/.gltf file.
 
 I literally spend 2 days figuring out how to get the model with textures and animations to the three.js. It seems like this is the only way, once animations does not work, then texture map is off, bugs with exportation, etc, etc. It was really painful.
