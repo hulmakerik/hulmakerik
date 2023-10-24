@@ -7,6 +7,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+# Concept:
+In the background there will be always a sphere. The sphere changes based on the user interactions. When idle a default shader will be animated. When you hover over the inter camera tracking, people models will be running around the globe. Drones - drones with flightpaths, neural networks? - maybe transparent sphere with many threads that glow and compute something ...
+
+Na te kouli se muzou pohybovat tvary podobny tomuhle: https://catlikecoding.com/unity/tutorials/pseudorandom-noise/voronoi-noise/
+Muzu tam mit jako vstup cas od kliknuti, ktery kdyz bude 0, tak se provede ta animace vyse a kdyz bude kladny, tak diky tomu budu vedet timestamp animace. Melo by to animovat prechod z te pohyblive divne koule na hladkou stagnujici kouli. Animace by mohla byt jako vlna co se siri, nebo muzou pahorky postupne zanikat a barva tmavnout. To teleso by melo byt mozne pohybovat a uzivatel by jen volil z menu animaci.
+
+Pak by sis mohl pro srandu udelat 3d sken obliceje a dat ho tam nekam na tu kouli nakonec ke kontaktum :D Bellus3D, https://apps.apple.com/us/app/metascan-3d-scanner/id1472387724
+
+TODO: lightning, dej tam odkaz na youtube kde vysvetluje tu injection
 
 # Models:
 
